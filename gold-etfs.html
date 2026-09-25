@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gold & ETFs | India Portfolio Insights</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-icon">IP</div>
+        <span>PORTFOLIO</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="nav-item"><span class="icon">◆</span> Insights</a>
+        <a href="ipos.html" class="nav-item"><span class="icon">▶</span> IPOs</a>
+        <a href="gold-etfs.html" class="nav-item active"><span class="icon">◉</span> Gold & ETFs</a>
+        <a href="mutual-funds.html" class="nav-item"><span class="icon">▣</span> Mutual Funds</a>
+        <a href="equity.html" class="nav-item"><span class="icon">▥</span> Equity</a>
+      </nav>
+      <div class="sidebar-footer">
+        <p class="disclaimer">Educational only. No investment advice.</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h1>Gold & ETFs</h1>
+        <div class="topbar-actions">
+          <button id="refreshBtn" class="btn-refresh">↻ Refresh</button>
+          <span class="last-updated" id="lastUpdated">—</span>
+        </div>
+      </header>
+
+      <section class="card">
+        <h3>Gold Rates · City</h3>
+        <p class="note">Indicative 22K / 24K retail (per 10g). Varies by jeweller. Diversification context only.</p>
+        <div class="gold-grid" id="goldGrid"></div>
+      </section>
+
+      <section class="card">
+        <h3>ETF Categories · Ranked Higher First</h3>
+        <p class="note">Ordered by typical AUM / liquidity (educational ranking). No specific product names.</p>
+        <div class="etf-cats">
+          <div class="etf-cat">
+            <h4>1 · Large Cap Index</h4>
+            <p>Broad large-cap benchmarks (Nifty 50 / Sensex style)</p>
+            <span class="rank-badge">Higher liquidity</span>
+          </div>
+          <div class="etf-cat">
+            <h4>2 · Gold</h4>
+            <p>Physical gold tracking ETFs</p>
+            <span class="rank-badge">Satellite hedge</span>
+          </div>
+          <div class="etf-cat">
+            <h4>3 · Banking / Sector</h4>
+            <p>Sector-focused (Bank Nifty style)</p>
+            <span class="rank-badge">Thematic</span>
+          </div>
+          <div class="etf-cat">
+            <h4>4 · Mid Cap Index</h4>
+            <p>Mid-cap benchmarks (Nifty Midcap style)</p>
+            <span class="rank-badge">Growth sleeve</span>
+          </div>
+          <div class="etf-cat">
+            <h4>5 · Next 50 / Large-Mid</h4>
+            <p>Nifty Next 50 style exposure</p>
+            <span class="rank-badge">Bridge</span>
+          </div>
+          <div class="etf-cat">
+            <h4>6 · Small Cap Index</h4>
+            <p>Small-cap benchmarks — higher volatility</p>
+            <span class="rank-badge">Satellite only</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Role in 50 / 30 / 20</h3>
+        <ul class="mix-list">
+          <li><span>Large Cap sleeve</span> <strong>Large Cap Index ETFs</strong></li>
+          <li><span>Mid Cap sleeve</span> <strong>Mid Cap Index ETFs</strong></li>
+          <li><span>Small Cap sleeve</span> <strong>Small Cap Index ETFs</strong></li>
+          <li><span>Gold satellite</span> <strong>Gold ETFs / physical</strong></li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        Rates approximate. ETF ranking is category-level only. Verify on NSE / BSE / AMC. No product recommendations.
+      </footer>
+    </main>
+  </div>
+  <script src="js/app.js"></script>
+  <script src="js/gold.js"></script>
+</body>
+</html>

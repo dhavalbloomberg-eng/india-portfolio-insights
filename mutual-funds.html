@@ -12,15 +12,14 @@
     <aside class="sidebar">
       <div class="logo">
         <div class="logo-icon">IP</div>
-        <span>Portfolio Insights</span>
+        <span>PORTFOLIO</span>
       </div>
       <nav class="nav">
-        <a href="index.html" class="nav-item"><span class="icon">📊</span> Insights</a>
-        <a href="ipos.html" class="nav-item"><span class="icon">🚀</span> IPOs</a>
-        <a href="gold.html" class="nav-item"><span class="icon">🪙</span> Gold</a>
-        <a href="mutual-funds.html" class="nav-item active"><span class="icon">📈</span> Mutual Funds</a>
-        <a href="equity.html" class="nav-item"><span class="icon">🏢</span> Equity</a>
-        <a href="etfs.html" class="nav-item"><span class="icon">📦</span> ETFs</a>
+        <a href="index.html" class="nav-item"><span class="icon">◆</span> Insights</a>
+        <a href="ipos.html" class="nav-item"><span class="icon">▶</span> IPOs</a>
+        <a href="gold-etfs.html" class="nav-item"><span class="icon">◉</span> Gold & ETFs</a>
+        <a href="mutual-funds.html" class="nav-item active"><span class="icon">▣</span> Mutual Funds</a>
+        <a href="equity.html" class="nav-item"><span class="icon">▥</span> Equity</a>
       </nav>
       <div class="sidebar-footer">
         <p class="disclaimer">Educational only. No investment advice.</p>
@@ -32,22 +31,21 @@
         <h1>Mutual Funds</h1>
         <div class="topbar-actions">
           <button id="refreshBtn" class="btn-refresh">↻ Refresh</button>
-          <span class="last-updated" id="lastUpdated">Loading...</span>
+          <span class="last-updated" id="lastUpdated">—</span>
         </div>
       </header>
 
       <section class="card">
-        <p class="note">Categories and sample schemes for diversification awareness. No ranking or recommendation. Data via public MF APIs where available.</p>
-        
-        <div class="mf-categories" id="mfCategories">
+        <p class="note">Category view only. No specific scheme names or rankings. For diversification awareness.</p>
+        <div class="mf-categories">
           <div class="mf-cat">
-            <h3>Equity Oriented</h3>
+            <h3>Equity</h3>
             <ul>
               <li>Large Cap</li>
               <li>Mid Cap</li>
               <li>Small Cap</li>
               <li>Flexi / Multi Cap</li>
-              <li>Index Funds</li>
+              <li>Index / Passive</li>
             </ul>
           </div>
           <div class="mf-cat">
@@ -59,7 +57,7 @@
             </ul>
           </div>
           <div class="mf-cat">
-            <h3>Debt & Others</h3>
+            <h3>Debt & Other</h3>
             <ul>
               <li>Liquid / Overnight</li>
               <li>Corporate Bond</li>
@@ -71,29 +69,20 @@
       </section>
 
       <section class="card">
-        <h3>Sample Schemes (Educational)</h3>
-        <div class="table-wrap">
-          <table id="mfTable">
-            <thead>
-              <tr>
-                <th>Scheme</th>
-                <th>Category</th>
-                <th>Latest NAV</th>
-                <th>Note</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
-        <p class="note">NAVs fetched from public endpoints (mfapi.in style). Always verify on official AMC / AMFI sites.</p>
+        <h3>Fit with Equity Framework</h3>
+        <ul class="mix-list">
+          <li><span>50% Mid Cap sleeve</span> <strong>Mid Cap / Flexi category</strong></li>
+          <li><span>30% Large Cap sleeve</span> <strong>Large Cap / Index category</strong></li>
+          <li><span>20% Small Cap sleeve</span> <strong>Small Cap category</strong></li>
+        </ul>
+        <p class="note" style="margin-top:12px">Always read scheme documents. Category labels follow SEBI classification. No product advice.</p>
       </section>
 
       <footer class="footer">
-        <p>Mutual fund investments are subject to market risks. Read all scheme related documents carefully. This page is for educational diversification context only.</p>
+        Mutual fund investments are subject to market risks. Educational context only.
       </footer>
     </main>
   </div>
   <script src="js/app.js"></script>
-  <script src="js/mf.js"></script>
 </body>
 </html>
