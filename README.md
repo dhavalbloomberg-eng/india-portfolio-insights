@@ -1,36 +1,27 @@
 # India Portfolio Insights
 
-Educational dashboard for **Indian market portfolio diversification**.
+Minimal classic trading-style dashboard for **Indian market portfolio diversification**.
 
-## Features
+## Pages
 
-- **Insights** – Overview of a universal diversification framework (Equity 50% Mid / 30% Large / 20% Small Cap + satellite Gold / MF / ETF)
-- **IPOs** – Mainboard & SME Grey Market Premium tables (data styled after [ipowatch.in](https://ipowatch.in/ipo-grey-market-premium-latest-ipo-gmp/))
-- **Gold** – Indicative 22K & 24K rates for Mumbai, Bangalore, Hyderabad, Kolkata
-- **Mutual Funds** – Categories + sample schemes with live NAV attempt via public API
-- **Equity** – Cap-wise allocation education
-- **ETFs** – Ranked higher by approximate AUM / liquidity (educational ranking only)
+- **Insights** — 50% Mid / 30% Large / 20% Small Cap equity core + satellite mix
+- **IPOs** — Mainboard & SME Grey Market Premium (educational)
+- **Gold & ETFs** — City gold rates + ETF *categories* ranked by typical liquidity (no product names)
+- **Mutual Funds** — Category view only (no scheme names)
+- **Equity** — Cap framework explanation
 
-## Important
+## Rules
 
-- **No buy / sell / hold recommendations**
-- Purely educational tool for understanding portfolio proportions in the Indian market
-- Data is snapshot / public-API based and updates on page refresh
-- Always verify latest numbers on official sources (NSE, BSE, AMFI, AMC sites, ipowatch.in etc.)
-- Not SEBI-registered advice. Consult a registered advisor before investing.
+- No buy / sell / hold recommendations  
+- No specific mutual fund or ETF product names  
+- Educational proportions for the Indian market only  
 
-## Live on GitHub Pages
+## Live
 
-After enabling Pages (Settings → Pages → Deploy from branch `main` / root), the site will be available at:
+Enable GitHub Pages (Settings → Pages → branch `main` / root):
 
 `https://dhavalbloomberg-eng.github.io/india-portfolio-insights/`
 
-## Updating data
+## Stack
 
-- IPO & Gold tables live in the JS files (`js/ipos.js`, `js/gold.js`)
-- Mutual fund NAVs attempt live fetch from `api.mfapi.in`
-- You can schedule a GitHub Action to refresh static JSON nightly if desired
-
-## Tech
-
-Plain HTML / CSS / JS. No build step. Works with GitHub Pages.
+Static HTML / CSS / JS. Dark minimal trading aesthetic.

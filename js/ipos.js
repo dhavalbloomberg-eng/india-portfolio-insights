@@ -1,4 +1,3 @@
-// IPO data snapshot (styled after ipowatch.in). Refresh page or update data/ipos.json for newer values.
 const mainboardIPOs = [
   { name: "SRIT India", gmp: 22, trend: "up", band: "₹130", est: "₹152 (16.92%)", date: "28-30 Sep", status: "Upcoming" },
   { name: "Shah Investor’s Home", gmp: 12, trend: "up", band: "₹167", est: "₹179 (7.19%)", date: "28-30 Sep", status: "Upcoming" },
@@ -28,9 +27,9 @@ const smeIPOs = [
 ];
 
 function trendIcon(t) {
-  if (t === "up") return '<span class="trend-up">🟢</span>';
-  if (t === "down") return '<span class="trend-down">🔴</span>';
-  return '<span class="trend-flat">🟡</span>';
+  if (t === "up") return '<span class="trend-up">▲</span>';
+  if (t === "down") return '<span class="trend-down">▼</span>';
+  return '<span class="trend-flat">—</span>';
 }
 
 function renderTable(tbody, data) {
@@ -50,7 +49,6 @@ function renderTable(tbody, data) {
 document.addEventListener('DOMContentLoaded', () => {
   renderTable(document.querySelector('#ipoMainTable tbody'), mainboardIPOs);
   renderTable(document.querySelector('#ipoSmeTable tbody'), smeIPOs);
-
   document.querySelectorAll('.tab').forEach(tab => {
     tab.addEventListener('click', () => {
       document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
