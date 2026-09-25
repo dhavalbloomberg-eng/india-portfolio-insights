@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mutual Funds | India Portfolio Insights</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-icon">IP</div>
+        <span>Portfolio Insights</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="nav-item"><span class="icon">📊</span> Insights</a>
+        <a href="ipos.html" class="nav-item"><span class="icon">🚀</span> IPOs</a>
+        <a href="gold.html" class="nav-item"><span class="icon">🪙</span> Gold</a>
+        <a href="mutual-funds.html" class="nav-item active"><span class="icon">📈</span> Mutual Funds</a>
+        <a href="equity.html" class="nav-item"><span class="icon">🏢</span> Equity</a>
+        <a href="etfs.html" class="nav-item"><span class="icon">📦</span> ETFs</a>
+      </nav>
+      <div class="sidebar-footer">
+        <p class="disclaimer">Educational only. No investment advice.</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h1>Mutual Funds</h1>
+        <div class="topbar-actions">
+          <button id="refreshBtn" class="btn-refresh">↻ Refresh</button>
+          <span class="last-updated" id="lastUpdated">Loading...</span>
+        </div>
+      </header>
+
+      <section class="card">
+        <p class="note">Categories and sample schemes for diversification awareness. No ranking or recommendation. Data via public MF APIs where available.</p>
+        
+        <div class="mf-categories" id="mfCategories">
+          <div class="mf-cat">
+            <h3>Equity Oriented</h3>
+            <ul>
+              <li>Large Cap</li>
+              <li>Mid Cap</li>
+              <li>Small Cap</li>
+              <li>Flexi / Multi Cap</li>
+              <li>Index Funds</li>
+            </ul>
+          </div>
+          <div class="mf-cat">
+            <h3>Hybrid</h3>
+            <ul>
+              <li>Aggressive Hybrid</li>
+              <li>Conservative Hybrid</li>
+              <li>Balanced Advantage</li>
+            </ul>
+          </div>
+          <div class="mf-cat">
+            <h3>Debt & Others</h3>
+            <ul>
+              <li>Liquid / Overnight</li>
+              <li>Corporate Bond</li>
+              <li>Gilt</li>
+              <li>International / FoF</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Sample Schemes (Educational)</h3>
+        <div class="table-wrap">
+          <table id="mfTable">
+            <thead>
+              <tr>
+                <th>Scheme</th>
+                <th>Category</th>
+                <th>Latest NAV</th>
+                <th>Note</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p class="note">NAVs fetched from public endpoints (mfapi.in style). Always verify on official AMC / AMFI sites.</p>
+      </section>
+
+      <footer class="footer">
+        <p>Mutual fund investments are subject to market risks. Read all scheme related documents carefully. This page is for educational diversification context only.</p>
+      </footer>
+    </main>
+  </div>
+  <script src="js/app.js"></script>
+  <script src="js/mf.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ETFs | India Portfolio Insights</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-icon">IP</div>
+        <span>Portfolio Insights</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="nav-item"><span class="icon">📊</span> Insights</a>
+        <a href="ipos.html" class="nav-item"><span class="icon">🚀</span> IPOs</a>
+        <a href="gold.html" class="nav-item"><span class="icon">🪙</span> Gold</a>
+        <a href="mutual-funds.html" class="nav-item"><span class="icon">📈</span> Mutual Funds</a>
+        <a href="equity.html" class="nav-item"><span class="icon">🏢</span> Equity</a>
+        <a href="etfs.html" class="nav-item active"><span class="icon">📦</span> ETFs</a>
+      </nav>
+      <div class="sidebar-footer">
+        <p class="disclaimer">Educational only. No investment advice.</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h1>ETF Rankings</h1>
+        <div class="topbar-actions">
+          <button id="refreshBtn" class="btn-refresh">↻ Refresh</button>
+          <span class="last-updated" id="lastUpdated">Loading...</span>
+        </div>
+      </header>
+
+      <section class="card">
+        <p class="note">ETFs ranked primarily by Assets Under Management (AUM) and secondary liquidity considerations. Higher ranked = larger / more liquid for educational observation. No recommendations.</p>
+        
+        <div class="table-wrap">
+          <table id="etfTable">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>ETF Name</th>
+                <th>Underlying</th>
+                <th>Category</th>
+                <th>Illustrative AUM Rank</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Using ETFs in the 50/30/20 Framework</h3>
+        <ul class="mix-list">
+          <li><strong>Large Cap</strong> — Nifty 50 / Sensex style ETFs</li>
+          <li><strong>Mid Cap</strong> — Nifty Midcap 150 / Nifty Next 50 style</li>
+          <li><strong>Small Cap</strong> — Nifty Smallcap 250 style (higher tracking error & liquidity risk)</li>
+          <li><strong>Gold</strong> — Gold ETFs as alternative to physical</li>
+        </ul>
+        <p class="note">Always check expense ratio, tracking error, and average daily volume before any decision. This list is static educational ranking.</p>
+      </section>
+
+      <footer class="footer">
+        <p>ETF rankings are approximate and for diversification education only. Verify latest AUM and liquidity on NSE / BSE / AMC sites.</p>
+      </footer>
+    </main>
+  </div>
+  <script src="js/app.js"></script>
+  <script src="js/etfs.js"></script>
+</body>
+</html>

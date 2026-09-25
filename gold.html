@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gold Rates | India Portfolio Insights</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-icon">IP</div>
+        <span>Portfolio Insights</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="nav-item"><span class="icon">📊</span> Insights</a>
+        <a href="ipos.html" class="nav-item"><span class="icon">🚀</span> IPOs</a>
+        <a href="gold.html" class="nav-item active"><span class="icon">🪙</span> Gold</a>
+        <a href="mutual-funds.html" class="nav-item"><span class="icon">📈</span> Mutual Funds</a>
+        <a href="equity.html" class="nav-item"><span class="icon">🏢</span> Equity</a>
+        <a href="etfs.html" class="nav-item"><span class="icon">📦</span> ETFs</a>
+      </nav>
+      <div class="sidebar-footer">
+        <p class="disclaimer">Educational only. No investment advice.</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h1>Gold Rates</h1>
+        <div class="topbar-actions">
+          <button id="refreshBtn" class="btn-refresh">↻ Refresh</button>
+          <span class="last-updated" id="lastUpdated">Loading...</span>
+        </div>
+      </header>
+
+      <section class="card">
+        <p class="note">City-wise retail indicative rates (22K & 24K). Prices vary by jeweller, making charges and taxes. For diversification context only.</p>
+        
+        <div class="gold-grid" id="goldGrid">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Why Gold in a Portfolio?</h3>
+        <p>Gold has historically acted as a diversifier and inflation hedge in Indian portfolios. Typical satellite allocation discussed in educational literature ranges 5–15% of overall assets. This page shows current city rates so you can observe regional differences — nothing more.</p>
+      </section>
+
+      <footer class="footer">
+        <p>Rates are approximate and change intra-day. Sources: public bullion aggregators. Not a call to buy or sell gold.</p>
+      </footer>
+    </main>
+  </div>
+  <script src="js/app.js"></script>
+  <script src="js/gold.js"></script>
+</body>
+</html>
